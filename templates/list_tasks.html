@@ -1,0 +1,17 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Type</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody id="list-tasks">
+
+        {% for task in tasks %}
+            {% include 'item_task.html' %}
+        {% endfor %}
+
+    </tbody>
+</table>

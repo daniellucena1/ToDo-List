@@ -1,0 +1,9 @@
+<tr>
+    <th scope="row">{{task.getId()}}</th>
+    <td>{{ task.getName() }}</td>
+    <td>{{ task.getType() }}</td>
+    <td>
+        <button class="btn btn-primary">Edit</button>
+        <button class="btn btn-danger" c-delete="{{ url_for('task.delete_task', task_id=task.getId()) }}" c-remove-closest="tr">Delete</button>
+    </td>
+</tr>
